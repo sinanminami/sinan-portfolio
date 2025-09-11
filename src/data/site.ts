@@ -14,7 +14,7 @@ export const AUTHOR = {
   bio: "数据和增长专家，兼顾运营与自媒体",
   location: "中国",
   email: "sinan_minami@163.com",
-  avatar: "/assets/images/photo.png",
+  avatar: "/assets/images/sinan-photo.png",
 } as const;
 
 export const SOCIAL = {
