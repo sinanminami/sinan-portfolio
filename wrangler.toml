@@ -1,0 +1,14 @@
+name = "sinan-ai.net"
+compatibility_date = "2023-05-18"
+
+# Cloudflare Pages 配置
+[env.production]
+name = "sinan-ai.net"
+
+# 构建配置（这些也会在 Pages 控制台配置）
+# build.command = "npm run build"
+# build.cwd = "."
+# build.watch_dir = "src"
+
+# 自定义域名配置（在 Pages 控制台设置）
+# custom_domain = "sinan-ai.net"

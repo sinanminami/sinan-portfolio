@@ -1,0 +1,8 @@
+# Cloudflare Pages 重定向规则
+# SPA 模式重定向（如果需要）
+# /* /index.html 200
+
+# 强制 HTTPS（如果需要）
+http://sinan-ai.net/* https://sinan-ai.net/:splat 301!
+http://www.sinan-ai.net/* https://sinan-ai.net/:splat 301!
+https://www.sinan-ai.net/* https://sinan-ai.net/:splat 301!
