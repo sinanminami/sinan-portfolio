@@ -2,9 +2,35 @@
 const { link, text } = Astro.props;
 ---
 
-<a
-  href={link}
-  class="inline-flex w-auto px-4 py-2 mt-5 text-xs font-semibold duration-300 ease-out border rounded-full bg-neutral-900 dark:bg-white dark:text-neutral-900 text-neutral-100 hover:border-neutral-700 border-neutral-900 dark:hover:border-neutral-300 hover:bg-white dark:hover:bg-black dark:hover:text-white hover:text-neutral-900"
->
-  {text}
-</a>
+<div class="relative inline-block">
+  <a
+    href={link}
+    id="contact-button"
+    class="inline-flex w-auto px-4 py-2 mt-5 text-xs font-semibold duration-300 ease-out border rounded-full bg-neutral-900 dark:bg-white dark:text-neutral-900 text-neutral-100 hover:border-neutral-700 border-neutral-900 dark:hover:border-neutral-300 hover:bg-white dark:hover:bg-black dark:hover:text-white hover:text-neutral-900"
+  >
+    {text}
+  </a>
+  <div
+    id="wechat-tooltip"
+    class="absolute left-full top-0 mt-5 ml-3 opacity-0 transition-opacity duration-300 pointer-events-none z-50"
+  >
+    <div class="px-4 py-2 text-xs font-semibold border rounded-full bg-neutral-900 dark:bg-white dark:text-neutral-900 text-neutral-100 border-neutral-900 dark:border-white whitespace-nowrap">
+      微信：sinan_minami
+    </div>
+  </div>
+</div>
+
+<script>
+  const button = document.getElementById('contact-button');
+  const tooltip = document.getElementById('wechat-tooltip');
+
+  if (button && tooltip) {
+    button.addEventListener('mouseenter', () => {
+      tooltip.style.opacity = '1';
+    });
+
+    button.addEventListener('mouseleave', () => {
+      tooltip.style.opacity = '0';
+    });
+  }
+</script>

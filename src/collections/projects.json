@@ -1,9 +1,9 @@
 [
 	{
-		"name": "TempMail.Best",
-		"description": "Best Temporary Email.",
-		"image": "/assets/images/projects/tempmail.best.png",
-		"url": "https://tempmail.best"
+		"name": "个人简历",
+		"description": "查看我的详细工作经历和技能背景",
+		"image": "/assets/images/projects/resume.png",
+		"url": "/resume"
 	},
 	{
 		"name": "DNS.Surf",
